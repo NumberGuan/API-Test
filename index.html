@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <link rel="stylesheet" href="/public/style.css">
+
+
+  <script src="/public/script.js"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<div class="center">
+<div class="registerContainer">
+  <form action="http://localhost:3000/registro" method="POST" class="registerPanel">
+    <h2>Registrarse</h2>
+    <input type="text" name="usuario" placeholder="Nombre de usuario" required oninput="checkAvailability(this)" autocomplete="off"><br><br>
+    <input type="email" name="correo" placeholder="Correo electrónico" required oninput="checkAvailability(this)" autocomplete="off"><br><br>
+    <input type="password" name="contraseña" placeholder="Contraseña" required autocomplete="off"><br><br>
+    <button type="submit">Registrarse</button>
+    <p id="error-message" class="error"></p>
+  </form>
+</div>
+
+<div class="loginContainer">
+  <form action="http://localhost:3000/inicio-sesion" method="POST" class="loginPanel">
+    <h2>Iniciar sesión</h2>
+    <input type="text" name="usuario" placeholder="Nombre de usuario" required><br><br>
+    <input type="password" name="contraseña" placeholder="Contraseña" required><br><br>
+    <button type="submit">Iniciar sesión</button>
+  </form>
+</div>
+</div>
+
+</body>
+</html>

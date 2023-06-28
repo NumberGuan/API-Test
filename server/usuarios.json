@@ -1,0 +1,49 @@
+[
+  {
+    "usuario": "eaewae23",
+    "horaCreacion": "26/6/2023, 23:12:45",
+    "correo": "holadwd@gmail.com",
+    "contraseña": "$2b$10$sWen.fL1lXHdIBRdE0U3NuxfC1JNIgiK/WgnscpWTED/sOjUL8XcG",
+    "permisos": "none",
+    "usuariosID": "000000000000001"
+  },
+  {
+    "usuario": "dwae23",
+    "horaCreacion": "26/6/2023, 23:13:29",
+    "correo": "tomdw@gmail.com",
+    "contraseña": "$2b$10$zqBRuLf4OzWzbLpwpMhaT.QBWr7k8xubwdjOa9rIpGk0o/GSzRJRC",
+    "permisos": "none",
+    "usuariosID": "000000000000002"
+  },
+  {
+    "usuario": "wdadwa123",
+    "horaCreacion": "26/6/2023, 23:17:40",
+    "correo": "dwadwa@gmail.com",
+    "contraseña": "$2b$10$ZXGgiasy2gVtCJboTZFsuenYim9m87rJz3bdeDfAwJ04k4madPTZq",
+    "permisos": "none",
+    "usuariosID": "000000000000000000000000000003"
+  },
+  {
+    "usuario": "wdawdu23",
+    "fechaCreacion": "26/6/2023",
+    "correo": "jfuawjfwa@gmail.com",
+    "contraseña": "$2b$10$pkB.W.1ONjKHCYvsXG8LeucZEjkrUUzz7e6YpvcaEyT6NzT5qkM1K",
+    "permisos": "none"
+  },
+  {
+    "usuario": "dwadwe2efawfsf",
+    "fechaCreacion": "26/6/2023",
+    "horaCreacion": "23:25:43",
+    "correo": "tomas@gmail.com",
+    "contraseña": "$2b$10$osJTrSMgCKQlZGc3uT0e5uMCVcQ.GlP7C6c.mWbCMDyT9CGA7xvoG",
+    "permisos": "none"
+  },
+  {
+    "usuario": "dawdiawdu",
+    "fechaCreacion": "27/6/2023",
+    "horaCreacion": "00:51:43",
+    "correo": "ytoakjwdk@gmail.com",
+    "contraseña": "$2b$10$niAt9Ypv/5yAcl3OQeu9duHlD3IAx.iAnyjAvTd3dTENkT6yYD4BC",
+    "permisos": "none"
+  }
+]

@@ -1,0 +1,31 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  position: relative;
+}
+
+.center {
+  width: 80%;
+  height: 80%;
+  border: 2px green dotted;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 30px;
+
+}
+
+.loginContainer, .registerContainer  {
+  width: 40%;
+  height: 40%;
+  border: 2px red dotted;
+}
+
+.invalid {
+  border-color: red;
+}
