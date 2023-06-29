@@ -9,22 +9,23 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Days+One&display=swap" rel="stylesheet">
 </head>
 <body>
 <div class="center">
-<div class="registerContainer">
-  <form action="http://localhost:3000/registro" method="POST" class="registerPanel">
-    <h2>Registrarse</h2>
-    <input type="text" name="usuario" placeholder="Nombre de usuario" required oninput="checkAvailability(this)" autocomplete="off"><br><br>
-    <input type="email" name="correo" placeholder="Correo electrónico" required oninput="checkAvailability(this)" autocomplete="off"><br><br>
-    <input type="password" name="contraseña" placeholder="Contraseña" required autocomplete="off"><br><br>
-    <button type="submit">Registrarse</button>
-    <p id="error-message" class="error"></p>
-  </form>
-</div>
-
+  <div class="registerContainer">
+    <img src="/docs/hexagonBackground.png" alt="hexagono" class="hexagono">
+    <img src="/docs/echoBlackLogo.png" alt="echo center logo" class="echoCenterLogo">
+    <form action="http://localhost:3000/registro" method="POST" class="registerPanel">
+      <h2>Registrarse</h2>
+      <input type="text" name="usuario" placeholder="Nombre de usuario" required oninput="checkAvailability(this)" autocomplete="off" class="styled-input"><br><br>
+      <input type="email" name="correo" placeholder="Correo electrónico" required oninput="checkAvailability(this)" autocomplete="off" class="styled-input"><br><br>
+      <input type="password" name="contraseña" placeholder="Contraseña" required autocomplete="off" class="styled-input"><br><br>
+      <button type="submit" class="registerButton">Registrarse</button>
+      <p id="error-message" class="error"></p>
+    </form>
+  </div>
+  
 <div class="loginContainer">
   <form action="http://localhost:3000/inicio-sesion" method="POST" class="loginPanel">
     <h2>Iniciar sesión</h2>

@@ -2,12 +2,17 @@ html, body {
   height: 100%;
   margin: 0;
   position: relative;
+  background-color: gray;
 }
+h2{
+  color: white;
+  font-weight: normal;
 
+}
 .center {
   width: 80%;
   height: 80%;
-  border: 2px green dotted;
+ /* border: 2px green dotted; */
   position: absolute;
   top: 50%;
   left: 50%;
@@ -19,13 +24,78 @@ html, body {
   gap: 30px;
 
 }
-
+.hexagono{
+  height: 80vh;
+  width: 80vh;
+}
 .loginContainer, .registerContainer  {
-  width: 40%;
-  height: 40%;
-  border: 2px red dotted;
+  width: 30%;
+  height: 70%;
+ /* border: 2px red dotted; */
+  font-family: 'Days One', sans-serif;
+}
+.registerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.echoCenterLogo{
+  width: 17rem;
+height: 5rem;
+}
+.top-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.hexagono {
+  position: absolute;
+  z-index: -1;
+}
+.registerPanel {
+  position: relative;
+  z-index: 1;
+}
+.loginContainer{
+  display: none;
 }
 
-.invalid {
-  border-color: red;
+.styled-input {
+  background-color: black;
+  color: white;
+  border: none;
+  border-bottom: 2px solid rgb(100, 100, 100);
+  transition: border-bottom-color 0.3s;
+  font-family: 'Days One', sans-serif;
+  width: 18rem;
+  height: 2rem;
 }
+
+.styled-input:focus {
+  outline: none;
+  border-bottom-color: white;
+  font-family: 'Days One', sans-serif;
+}
+.styled-input.error {
+  border-bottom-color: red;
+}
+.error-text {
+  color: white;
+}
+.registerButton {
+  font-family: 'Days One', sans-serif;
+  background: none;
+  border: 1px solid white;
+  border-radius: 10px;
+  width: 8rem;
+  height: 2rem;
+  color: white;
+}
+.registerButton:hover{
+background-color: gray;
+transition: background-color 0.5s;
+}
+
