@@ -1,40 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
-
   <link rel="stylesheet" href="/public/style.css">
-
-
   <script src="/public/script.js"></script>
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Days+One&display=swap" rel="stylesheet">
 </head>
 <body>
-<div class="center">
-  <div class="registerContainer">
-    <img src="/docs/hexagonBackground.png" alt="hexagono" class="hexagono">
-    <img src="/docs/echoBlackLogo.png" alt="echo center logo" class="echoCenterLogo">
-    <form action="http://localhost:3000/registro" method="POST" class="registerPanel">
-      <h2>Registrarse</h2>
-      <input type="text" name="usuario" placeholder="Nombre de usuario" required oninput="checkAvailability(this)" autocomplete="off" class="styled-input"><br><br>
-      <input type="email" name="correo" placeholder="Correo electrónico" required oninput="checkAvailability(this)" autocomplete="off" class="styled-input"><br><br>
-      <input type="password" name="contraseña" placeholder="Contraseña" required autocomplete="off" class="styled-input"><br><br>
-      <button type="submit" class="registerButton">Registrarse</button>
-      <p id="error-message" class="error"></p>
-    </form>
+  <div class="center">
+    <div class="registerContainer">
+      <img src="/docs/hexagonBackground.png" alt="hexagono" class="hexagono">
+      <img src="/docs/echoBlackLogo.png" alt="echo center logo" class="echoCenterLogo">
+      <form action="http://localhost:3000/registro" method="POST" class="registerPanel">
+        <h2>Registrarse</h2>
+        <input type="text" name="usuario" placeholder="Nombre de usuario" required oninput="checkAvailability(this)" autocomplete="off" class="styled-input"><br><br>
+        <input type="email" name="correo" placeholder="Correo electrónico" required oninput="checkAvailability(this)" autocomplete="off" class="styled-input"><br><br>
+        <div class="password-input">
+          <input type="password" name="contraseña" placeholder="Contraseña" required autocomplete="off" class="styled-input">
+          <img class="eye-icon" src="docs/SVG2white.png" viewBox="0 0 20 20">
+        </div>
+        <button type="submit" class="registerButton">Registrarse</button>
+        <button type="button" class="loginButton">Iniciar sesión</button>
+        <p id="error-message" class="error"></p>
+      </form>
+    </div>
+    
+    <div class="loginContainer">
+      <form action="http://localhost:3000/inicio-sesion" method="POST" class="loginPanel">
+        <h2>Iniciar sesión</h2>
+        <input type="text" name="usuario" placeholder="Nombre de usuario" required><br><br>
+        <input type="password" name="contraseña" placeholder="Contraseña" required><br><br>
+        <button type="submit" class="loginButton">Iniciar sesión</button>
+      </form>
+    </div>
   </div>
-  
-<div class="loginContainer">
-  <form action="http://localhost:3000/inicio-sesion" method="POST" class="loginPanel">
-    <h2>Iniciar sesión</h2>
-    <input type="text" name="usuario" placeholder="Nombre de usuario" required><br><br>
-    <input type="password" name="contraseña" placeholder="Contraseña" required><br><br>
-    <button type="submit">Iniciar sesión</button>
-  </form>
-</div>
-</div>
-
 </body>
 </html>

@@ -67,7 +67,6 @@ app.post('/registro', (req, res) => {
     }
   });
 });
-
 app.post('/inicio-sesion', (req, res) => {
   const { usuario, contraseña } = req.body;
 

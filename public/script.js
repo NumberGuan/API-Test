@@ -1,3 +1,37 @@
+document.addEventListener('DOMContentLoaded', function() {
+  const loginButton = document.querySelector('.loginButton');
+  const registerContainer = document.querySelector('.registerContainer');
+  const loginContainer = document.querySelector('.loginContainer');
+
+  loginButton.addEventListener('click', function() {
+    registerContainer.style.display = 'none';
+    loginContainer.style.display = 'flex';
+  });
+
+  const passwordInput = document.querySelector('input[name="contraseña"]');
+  const eyeIcon = document.querySelector('.eye-icon');
+
+  eyeIcon.addEventListener('click', function() {
+    const type = passwordInput.getAttribute('type');
+    if (type === 'password') {
+      passwordInput.setAttribute('type', 'text');
+      eyeIcon.classList.add('active');
+    } else {
+      passwordInput.setAttribute('type', 'password');
+      eyeIcon.classList.remove('active');
+    }
+  });
+
+  const registerButton = document.querySelector('.loginContainer .registerButton');
+  const registerPanel = document.querySelector('.registerContainer .registerPanel');
+
+  registerButton.addEventListener('click', function() {
+    registerPanel.style.display = 'block';
+    loginContainer.style.display = 'none';
+    registerContainer.style.display = 'flex';
+  });
+});
+
 function checkAvailability(inputField) {
   const errorMessage = document.getElementById('error-message');
   const value = inputField.value;
